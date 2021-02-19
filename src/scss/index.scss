@@ -1,0 +1,40 @@
+@import "fonts";
+@import "variables";
+@import "header";
+@import "home-page";
+@import "quick-start";
+@import "customer-first";
+@import "footer";
+@import "blog";
+@import "post";
+@import "signUp";
+@import "mediaRequest";
+@import "menu-burger";
+
+body {
+  font-family: Inter !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--black) !important;
+  font-size: 16px !important;
+}
+.container {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+.background-black {
+  background: var(--white);
+}
+.background {
+  background: var(--white);
+}
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all .2s !important;
+}
+.changeTheme {
+  margin: 0 0px 0 20px;
+}
+

@@ -1,0 +1,32 @@
+.post-image {
+  margin: 170px 0 40px 0;
+}
+.post-text {
+  max-width: 558px;
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+}
+.post-btn {
+  margin: 47px 0 317px 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: var(--color-btn);
+  width: 93px;
+  height: 43px;
+  background: var(--red);
+  border-radius: 24px;
+  align-items: center;
+  padding: 14px 24px;
+  border: none;
+  &:hover{
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--red-hower-bg);
+    box-shadow: 0 0 20px 4px var(--red-hower-shadow);
+    transform: scale(1.1);
+  }
+}

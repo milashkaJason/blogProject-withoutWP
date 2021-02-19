@@ -1,0 +1,105 @@
+.menu {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  &:hover {
+    cursor: pointer;
+  }
+  span{
+    height: 2px;
+    display: inline-block;
+    width: 50px;
+    background: var(--black);
+  }
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 34px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    background: var(--black);
+    transition: all .3s ease;
+  }
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    background: var(--black);
+    transition: all .3s ease;
+  }
+}
+.menu.active {
+  span {
+    display: none;
+  }
+  &:before {
+    left: 0;
+    top: 10px;
+    transform: rotate(-45deg);
+    transition: all .3s ease;
+  }
+  &:after {
+    left: 0;
+    top: 10px;
+    transform: rotate(45deg);
+    transition: all .3s ease;
+  }
+}
+.menu-burger {
+  top: -1000px;
+  transition: all .4s ease;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--white);
+  height: 100vh;
+}
+.menu-burger.activeMenuList {
+  top: 0;
+  transition: all .6s ease;
+}
+.menu-burger__list {
+  list-style: none;
+  padding: 155px 0 0 0px;
+  text-align: center;
+  a {
+    color: var(--black);
+    font-size: 35px;
+    &:hover {
+      text-decoration: none;
+      color: var(--red)
+    }
+  }
+  button {
+    border-radius: 24px;
+    width: 100px;
+    height: 43px;
+    background: var(--red);
+    border: none;
+    color: var(--color-btn);
+    transition: all 0.2s ease;
+    margin: 20px 0 0 0;
+    &:hover {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: var(--red-hower-bg);
+      box-shadow: 0 0 20px 4px var(--red-hower-shadow);
+      transform: scale(1.1);
+    }
+  }
+}
+.changeTheme1 {
+  font-size: 46px !important;
+}
+
